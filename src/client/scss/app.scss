@@ -1,0 +1,11 @@
+$theme-colors: (
+    'primary': #0091ea //Covalence Blue!  :D
+);
+
+.spinner-size {
+    height: 200px !important;
+    width: 200px !important;
+    margin-top: 40vh;
+}
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
