@@ -1,15 +1,10 @@
 import * as React from 'react';
+import apiService from '../utils/api-service';
 
 const Lulz: React.FC<LulzProps> = props => {
 
 	React.useEffect(() => {
-		const token = localStorage.getItem('token');
-		fetch('/api/lulz', {
-			headers: {
-				Authorization: `Bearer ${token}`
-			}
-		})
-			.then(res => res.json())
+		apiService('/api/lulz')
 			.then(lulz => console.log(lulz));
 	}, []);
 
